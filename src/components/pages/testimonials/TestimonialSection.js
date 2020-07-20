@@ -31,10 +31,10 @@ const TestimonialSection = () => {
               <img
                 src={t.img}
                 alt={t.name}
-                className="owl-carouse-item-img"
+                className={t.stylingImg}
                 style={t.ImgSpacing}
               />
-              <div className="column is-7-desktop" style={t.textSpacing}>
+              <div className={`column is-7-desktop ${t.stylingColumn}`}>
                 <p>
                   <b>&#8220;</b>
                   {t.qoute}
