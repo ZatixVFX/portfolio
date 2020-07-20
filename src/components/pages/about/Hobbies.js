@@ -1,6 +1,5 @@
 import React from "react";
 
-import LaptopImg from "../../../resources/images/laptop-img.jpg";
 import FamilyImg from "../../../resources/images/family-icon.png";
 import PopcornImg from "../../../resources/images/popcorn.png";
 

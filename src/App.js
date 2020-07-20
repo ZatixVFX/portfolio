@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 
 import LandingPage from "./components/pages/LandingPage";
 import About from "../src/components/pages/about/About";
