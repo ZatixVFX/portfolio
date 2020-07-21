@@ -16,6 +16,8 @@ const Work = () => {
           {prj.map((p, id) => (
             <div
               className={`column hover-effect is-12-desktop is-8-1920px ${p.offset}`}
+              data-aos="zoom-in"
+              data-aos-duration="500"
               key={id}
             >
               <div className="card">
