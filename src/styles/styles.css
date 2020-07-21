@@ -180,9 +180,20 @@
     line-height: 1.125;
   }
 
+  .helping-hand-icon {
+    width: 340px;
+    height: 345px;
+    margin-left: 11rem;
+    margin-right: 3rem;
+  }
+
+  .is-8-1920px {
+    width: 82.66667% !important;
+  }
+
   .about-me-subtitle {
     color: #4a4a4a;
-    /* font-size: 1.25rem; */
+    font-size: 1.25rem;
     font-weight: 415;
     line-height: 1.25;
   }
@@ -302,4 +313,44 @@
     max-width: 100%;
     max-height: 100%;
   }
+}
+
+/* slide effects */
+.slideInRight {
+  -webkit-animation-name: slideInRight;
+  animation-name: slideInRight;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  opacity: 0;
+  will-change: opacity, visibility;
+}
+@-webkit-keyframes slideInRight {
+  0% {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    visibility: hidden;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes slideInRight {
+  0% {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    visibility: hidden;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+.slideInRight.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
 }

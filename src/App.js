@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useEffect } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 
 import LandingPage from "./components/pages/LandingPage";
@@ -11,10 +11,17 @@ import Contact from "./components/pages/Contact";
 
 import "./bulma-0.9.0/css/bulma.css";
 import "bulma-tooltip/dist/css/bulma-tooltip.min.css";
+// Animate on scroll
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import "./styles/styles.css";
 import "./App.css";
 
 function App() {
+  useEffect(() => {
+    AOS.init({ duration: 1100 });
+  }, []);
   return (
     <Router>
       <Fragment>

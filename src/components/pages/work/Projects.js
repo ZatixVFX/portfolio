@@ -8,22 +8,26 @@ export default [
     Img: WebDesignEndOfModuleProject,
     Name: "Web Design End Of Module Project",
     Link: "https://web-design-end-of-module-project.netlify.app/",
+    offset: "is-offset-2",
   },
   {
     Img: GithubFinderProject,
     Name: "Github Finder ReactJS tutorial",
     Link: "https://github-finder-project-reactjs.netlify.app/",
+    offset: "is-offset-1",
   },
   {
     Img: ContactKeeperProject,
     Name: "Contact Keeper ReactJS tutorial",
     Link: "",
+    offset: "is-offset-2",
     tooltip: "Link not available",
   },
   {
     Img: FinalWebDesingProject,
     Name: "Coming soon...",
     Link: "",
+    offset: "is-offset-1",
     tooltip: "Link not available",
   },
 ];

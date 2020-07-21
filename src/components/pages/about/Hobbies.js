@@ -15,14 +15,21 @@ const Hobbies = () => {
         </h1>
       </div>
       <div className="hero-body">
-        <div style={{ fontSize: "23px" }}>
+        <div
+          style={{ fontSize: "23px" }}
+          data-aos="fade-right"
+          data-aos-easing="ease-in-sine"
+        >
           <i
             className="fa fa-laptop fa-6x"
             aria-hidden="true"
             style={{ paddingLeft: "4rem", paddingRight: "2rem" }}
           ></i>
         </div>
-        <div className="columns is-variable is-desktop is-vcentered">
+        <div
+          className="columns is-variable is-desktop is-vcentered"
+          data-aos="fade-left"
+        >
           <div className="column is-12-desktop">
             <h1
               className="about-me-title has-text-left"
@@ -47,7 +54,7 @@ const Hobbies = () => {
         </div>
       </div>
       <div className="hero-body">
-        <div className="columns is-variable is-desktop">
+        <div className="columns is-variable is-desktop" data-aos="fade-right">
           <div className="column is-12-desktop is-offset-1">
             <h1
               className="title has-text-left"
@@ -69,6 +76,8 @@ const Hobbies = () => {
           width={240}
           height={240}
           style={{ paddingRight: "4rem" }}
+          data-aos="fade-left"
+          data-aos-easing="ease-in-sine"
         />
       </div>
       <div className="hero-body">
@@ -78,8 +87,10 @@ const Hobbies = () => {
           width={280}
           height={240}
           style={{ paddingLeft: "7rem" }}
+          data-aos="fade-right"
+          data-aos-easing="ease-in-sine"
         />
-        <div className="columns is-variable is-desktop">
+        <div className="columns is-variable is-desktop" data-aos="fade-left">
           <div className="column is-10-desktop is-offset-2">
             <h1 className="title has-text-left">Watching movies or series</h1>
             <p className="subtitle">

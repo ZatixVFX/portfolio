@@ -1,6 +1,6 @@
 import React from "react";
 
-import ExampleImg from "../../../resources/images/example_img.jpg";
+import ExampleImg from "../../../resources/images/example-img.jpg";
 
 const About = () => {
   return (

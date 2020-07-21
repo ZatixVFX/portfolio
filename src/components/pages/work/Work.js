@@ -14,7 +14,10 @@ const Work = () => {
       <div className="hero-body work-body-spacing">
         <div className="columns is-variable is-desktop" style={gridstyle}>
           {prj.map((p, id) => (
-            <div className="column hover-effect is-12-desktop" key={id}>
+            <div
+              className={`column hover-effect is-12-desktop is-8-1920px ${p.offset}`}
+              key={id}
+            >
               <div className="card">
                 <div className="card-image">
                   <figure
@@ -48,25 +51,27 @@ const Work = () => {
         <img
           src={HelpingHandHeartIcon}
           alt="Helping hand heart icon"
-          width={240}
-          height={240}
+          className="helping-hand-icon"
+          data-aos="fade-right"
+          data-aos-easing="ease-in-sine"
         />
-        <div className="columns is-variable is-desktop">
-          <div className="column is-9-desktop is-offset-3">
+        <div className="columns is-variable is-desktop" data-aos="fade-left">
+          <div className="column is-9-desktop is-offset-2">
             <h1 className="title has-text-left">Volunteer work</h1>
-            <p>
+            <p style={{ fontSize: "19px" }}>
               <b>Company: </b> {`SSS (Sports Stepping Stones)`}
               <br />
               <b>Period: </b> 2 months+
               <br />
               <b>Role: </b> To help out the team with the children
             </p>
-            <b>Duties:</b>
+            <b style={{ fontSize: "19px" }}>Duties:</b>
             <ul
               style={{
                 listStyleType: "circle",
                 listStylePosition: "outside",
                 marginLeft: "4.82rem",
+                fontSize: "19px",
               }}
             >
               <li>Help feed the children</li>
