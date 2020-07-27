@@ -16,7 +16,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 import "./styles/styles.css";
-import "./App.css";
+//import "./App.css";
 
 function App() {
   useEffect(() => {

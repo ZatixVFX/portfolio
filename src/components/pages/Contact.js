@@ -12,7 +12,7 @@ export default class Contact extends React.Component {
   render() {
     const { status } = this.state;
     return (
-      <footer className="footer footer-padding" id="Contact">
+      <footer className="footer footer-sm footer-padding" id="Contact">
         <h1 className="title has-text-centered">Contact me</h1>
         <div className="columns is-variable is-desktop">
           <div className="column is-7-desktop is-offset-3">

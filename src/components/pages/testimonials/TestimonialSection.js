@@ -27,19 +27,36 @@ const TestimonialSection = () => {
           ]}
         >
           {Testimonials.map((t, id) => (
-            <div className="columns is-variable is-desktop item" key={id}>
-              <img
-                src={t.img}
-                alt={t.name}
-                className={t.stylingImg}
-                style={t.ImgSpacing}
-              />
-              <div className={`column is-7-desktop ${t.stylingColumn}`}>
-                <p>
-                  <b>&#8220;</b>
-                  {t.qoute}
-                  <b>&#8221;</b> - <b>{t.name}</b>
-                </p>
+            <div className="columns item">
+              <div className="column is-10-desktop is-offset-1" key={id}>
+                <div className="box" style={{ padding: "4.25rem !important" }}>
+                  <article className="media">
+                    <div
+                      className="media-left"
+                      style={{ marginLeft: "-3rem !important" }}
+                    >
+                      <figure
+                        className="image"
+                        style={{ height: "197px", width: "332px" }}
+                      >
+                        <img
+                          src={t.img}
+                          alt={t.name}
+                          style={{ width: "100%", maxHeight: "100%" }}
+                        />
+                      </figure>
+                    </div>
+                    <div className="media-content">
+                      <div className="content">
+                        <p style={{ fontSize: "25px" }}>
+                          <b>&#8220;</b>
+                          {t.qoute}
+                          <b>&#8221;</b> - <b>{t.name}</b>
+                        </p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
               </div>
             </div>
           ))}

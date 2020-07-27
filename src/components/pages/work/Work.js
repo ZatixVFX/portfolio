@@ -1,7 +1,6 @@
 import React from "react";
 
 import prj from "./Projects";
-import HelpingHandHeartIcon from "../../../resources/images/helping-hand-heart-icon.png";
 
 const Work = () => {
   return (
@@ -15,9 +14,7 @@ const Work = () => {
         <div className="columns is-variable is-desktop" style={gridstyle}>
           {prj.map((p, id) => (
             <div
-              className={`column hover-effect is-12-desktop is-8-1920px ${p.offset}`}
-              data-aos="zoom-in"
-              data-aos-duration="500"
+              className={`column hover-effect is-mobile is-12-desktop is-8-1920px is-8-768px ${p.offset}`}
               key={id}
             >
               <div className="card">
@@ -50,15 +47,12 @@ const Work = () => {
         </div>
       </div>
       <div className="hero-body">
-        <img
-          src={HelpingHandHeartIcon}
-          alt="Helping hand heart icon"
-          className="helping-hand-icon"
-          data-aos="fade-right"
-          data-aos-easing="ease-in-sine"
-        />
-        <div className="columns is-variable is-desktop" data-aos="fade-left">
-          <div className="column is-9-desktop is-offset-2">
+        <div className="container-1">
+          <i class="fas fa-hands fa-9x"></i>
+          <i class="fas fa-heart fa-9x"></i>
+        </div>
+        <div className="columns is-variable is-mobile is-desktop">
+          <div className="column is-mobile is-9-desktop is-offset-2">
             <h1 className="title has-text-left">Volunteer work</h1>
             <p style={{ fontSize: "19px" }}>
               <b>Company: </b> {`SSS (Sports Stepping Stones)`}
