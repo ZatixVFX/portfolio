@@ -1,13 +1,11 @@
 import React from "react";
 
-import ExampleImg from "../../../resources/images/example-img.jpg";
 import AboutmeImg from "../../../resources/images/About-me-img.jpg";
 
 const About = () => {
   return (
     <section className="hero is-fullheight" id="About">
       <div className="hero-body">
-        <div></div>
         <figure className="image figure-1">
           <img src={AboutmeImg} alt="Example-img" className="about-me-img" />
         </figure>
