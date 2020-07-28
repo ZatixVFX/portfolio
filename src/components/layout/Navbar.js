@@ -3,9 +3,31 @@ import { Link } from "react-scroll";
 
 import JunaidSalieLogo from "../../resources/images/JunaidSalieLogo.png";
 
+const NavbarBurger = (props) => (
+  <a
+    onClick={props.toggleMenu}
+    href="#none"
+    rel="noopener noreferrer"
+    role="button"
+    class={`navbar-burger burger ${props.active ? "is-active" : ""}`}
+    aria-label="menu"
+    aria-expanded="false"
+    data-taget="navbarBasicExample"
+  >
+    <span aria-hidden="true"></span>
+    <span aria-hidden="true"></span>
+    <span aria-hidden="true"></span>
+  </a>
+);
+
 class Navbar extends React.Component {
   state = {
     navBackground: "transparent",
+    activeMenu: false,
+  };
+
+  toggleMenu = () => {
+    this.setState({ activeMenu: !this.state.activeMenu });
   };
 
   componentDidMount() {
@@ -40,8 +62,17 @@ class Navbar extends React.Component {
               height={28}
             />
           </Link>
+          <NavbarBurger
+            active={this.state.activeMenu}
+            toggleMenu={this.toggleMenu}
+          />
         </div>
-        <div className="navbar-menu">
+        <div
+          id="navbarBasicExample"
+          className={`navbar-menu ${
+            this.state.activeMenu ? "is-active activeMenuM" : ""
+          }`}
+        >
           <div className="navbar-end">
             <Link
               activeClass="active"
@@ -104,18 +135,6 @@ class Navbar extends React.Component {
               Contact
             </Link>
           </div>
-          <a
-            href="#none"
-            rel="noopener noreferrer"
-            role="button"
-            class="m"
-            aria-label="menu"
-            aria-expanded="false"
-          >
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
         </div>
       </nav>
     );
