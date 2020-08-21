@@ -1,66 +1,61 @@
 import React from "react";
 
 import Testimonials from "./Testimonials";
-
-import OwlCarousel from "react-owl-carousel";
-import "owl.carousel/dist/assets/owl.carousel.css";
-import "owl.carousel/dist/assets/owl.theme.default.css";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const TestimonialSection = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
   return (
-    <section className="hero is-medium" id="Testimonials">
+    <section className="hero is-medium is-medium-style" id="Testimonials">
       <div className="hero-header has-text-centered">
         <h1 className="title">Testimonials</h1>
         <h2 className="subtitle">This is what my peers have to say about me</h2>
       </div>
       <div className="hero-body">
-        <OwlCarousel
-          className="owl-theme"
-          items="1"
-          nav
-          dots
-          loop
-          margin={10}
-          navText={[
-            [`<i class="fas fa-arrow-left fa-2x"></i>`],
-            [`<i class="fas fa-arrow-right fa-2x"></i>`],
-          ]}
-        >
+        <Slider {...settings}>
           {Testimonials.map((t, id) => (
-            <div className="columns item">
-              <div className="column is-10-desktop is-offset-1" key={id}>
-                <div className="box" style={{ padding: "4.25rem !important" }}>
-                  <article className="media">
-                    <div
-                      className="media-left"
-                      style={{ marginLeft: "-3rem !important" }}
+            <div className="columns">
+              <div
+                className="column is-12"
+                key={id}
+                style={{ marginLeft: "1rem" }}
+              >
+                <div
+                  className="card is-flex"
+                  style={{ padding: "4.25rem !important" }}
+                >
+                  <div className="card-image ml-4">
+                    <figure
+                      className="image"
+                      style={{ height: "197px", width: "332px" }}
                     >
-                      <figure
-                        className="image"
-                        style={{ height: "197px", width: "332px" }}
-                      >
-                        <img
-                          src={t.img}
-                          alt={t.name}
-                          style={{ width: "100%", maxHeight: "100%" }}
-                        />
-                      </figure>
-                    </div>
-                    <div className="media-content">
-                      <div className="content">
-                        <p style={{ fontSize: "25px" }}>
-                          <b>&#8220;</b>
-                          {t.qoute}
-                          <b>&#8221;</b> - <b>{t.name}</b>
-                        </p>
-                      </div>
-                    </div>
-                  </article>
+                      <img
+                        src={t.img}
+                        alt={t.name}
+                        style={{ width: "100%", maxHeight: "100%" }}
+                      />
+                    </figure>
+                  </div>
+                  <div className="content" style={{ marginLeft: "3rem" }}>
+                    <p style={{ fontSize: "25px" }}>
+                      <b>&#8220;</b>
+                      {t.qoute}
+                      <b>&#8221;</b> - <b>{t.name}</b>
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           ))}
-        </OwlCarousel>
+        </Slider>
       </div>
     </section>
   );

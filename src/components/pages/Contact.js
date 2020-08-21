@@ -67,8 +67,8 @@ export default class Contact extends React.Component {
             </h1>
           </div>
           <div className="has-text-left">
-            <i class="fab fa-linkedin fa-1x"></i>
-            <i class="fab fa-github fa-1x"></i>
+            <i className="fab fa-linkedin fa-1x"></i>
+            <i className="fab fa-github fa-1x"></i>
           </div>
         </div>
       </footer>

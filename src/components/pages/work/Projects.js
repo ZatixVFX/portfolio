@@ -25,9 +25,8 @@ export default [
   },
   {
     Img: FinalWebDesingProject,
-    Name: "Coming soon...",
-    Link: "",
+    Name: "Final Web Design Project",
+    Link: "https://whispering-badlands-96166.herokuapp.com/",
     offset: "is-offset-1",
-    tooltip: "Link not available",
   },
 ];

@@ -5,7 +5,10 @@ import PopcornImg from "../../../resources/images/popcorn.png";
 
 const Hobbies = () => {
   return (
-    <section className="hero is-fullheight" id="Hobbies">
+    <section
+      className="hero is-fullheight is-fullheight-style-hobbies"
+      id="Hobbies"
+    >
       <div className="hero-header has-text-centered">
         <h1
           className="title header-title"

@@ -9,7 +9,7 @@ const NavbarBurger = (props) => (
     href="#none"
     rel="noopener noreferrer"
     role="button"
-    class={`navbar-burger burger ${props.active ? "is-active" : ""}`}
+    className={`navbar-burger burger ${props.active ? "is-active" : ""}`}
     aria-label="menu"
     aria-expanded="false"
     data-taget="navbarBasicExample"

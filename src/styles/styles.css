@@ -16,27 +16,6 @@
 }
 
 @media screen and (max-width: 1024px) and (max-width: 1440px) and (max-width: 1920px) {
-  .about-me-img {
-    height: auto;
-    width: 500px;
-    max-width: 100%;
-    padding-right: 2rem;
-  }
-
-  .about-me-title {
-    color: #363636;
-    font-size: 2rem;
-    font-weight: 600;
-    line-height: 1.125;
-  }
-
-  .about-me-subtitle {
-    color: #4a4a4a;
-    /* font-size: 1.25rem; */
-    font-weight: 415;
-    line-height: 1.25;
-  }
-
   .header-title {
     padding-top: 1rem;
   }
@@ -78,18 +57,6 @@
     margin-left: 6.1rem !important;
     margin-top: 4.3rem;
     margin-bottom: 1.6rem;
-  }
-
-  .column-name {
-    margin-left: 2.1rem !important;
-    margin-top: 2.6rem !important;
-    font-size: 23px !important;
-  }
-
-  .column-Jason {
-    margin-left: 2.1rem !important;
-    margin-top: 2.6rem !important;
-    font-size: 23px !important;
   }
 
   .owl-prev {
@@ -165,37 +132,7 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 1440px) {
-  .about-me-img {
-    height: auto;
-    width: 500px;
-    max-width: 100%;
-    padding-right: 2rem;
-  }
-}
-
 @media screen and (max-width: 1920px) {
-  .about-me-img {
-    height: auto;
-    width: 500px;
-    max-width: 100%;
-    padding-right: 2rem;
-  }
-
-  .about-me-title {
-    color: #363636;
-    font-size: 2rem;
-    font-weight: 600;
-    line-height: 1.125;
-  }
-
-  .helping-hand-icon {
-    width: 340px;
-    height: 345px;
-    margin-left: 11rem;
-    margin-right: 3rem;
-  }
-
   .is-8-1920px {
     width: 82.66667% !important;
   }
@@ -238,18 +175,6 @@
   .owl-carousel-item-img {
     max-width: 25% !important;
     max-height: 15% !important;
-  }
-
-  .column-name {
-    margin-left: 2.1rem !important;
-    margin-top: 2.6rem !important;
-    font-size: 23px !important;
-  }
-
-  .column-Jason {
-    margin-left: 2.1rem !important;
-    margin-top: 2.6rem !important;
-    font-size: 23px !important;
   }
 
   .owl-prev {
@@ -314,40 +239,6 @@
   }
 }
 
-/* slide effects */
-.slideInRight {
-  -webkit-animation-name: slideInRight;
-  animation-name: slideInRight;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  opacity: 0;
-  will-change: opacity, visibility;
-}
-@-webkit-keyframes slideInRight {
-  0% {
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
-    visibility: hidden;
-  }
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-}
-@keyframes slideInRight {
-  0% {
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
-    visibility: hidden;
-  }
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-}
-
 @media screen and (max-width: 768px) {
   .img-size {
     height: 273px !important;
@@ -357,12 +248,6 @@
   .is-8-768px {
     width: 103.66667% !important;
   }
-}
-
-.slideInRight.is-visible {
-  opacity: 1;
-  transform: none;
-  visibility: visible;
 }
 
 .container-1 {
@@ -382,13 +267,6 @@
 }
 
 @media screen and (min-width: 375px) {
-  .hero.is-fullheight {
-    min-width: 72vh;
-  }
-  .hero.is-medium {
-    min-width: 72vh;
-  }
-
   .horizontal-line {
     height: 1px;
     background-color: #e6e6e6;
@@ -405,24 +283,9 @@
       color-stop(-4.02, white)
     );
   }
-
-  .footer.footer-sm {
-    min-width: 72vh;
-  }
 }
 
 @media screen and (min-width: 425px) {
-  html {
-    min-width: 166vh;
-  }
-
-  .hero.is-fullheight {
-    min-width: 165vh !important;
-  }
-  .hero.is-medium {
-    min-width: 165vh !important;
-  }
-
   .horizontal-line {
     height: 1px;
     background-color: #e6e6e6;
@@ -439,24 +302,9 @@
       color-stop(-4.02, white)
     );
   }
-
-  .footer.footer-sm {
-    min-width: 165vh !important;
-  }
 }
 
 @media screen and (min-width: 320px) {
-  html {
-    min-width: 127vh;
-  }
-
-  .hero.is-fullheight {
-    min-width: 113vh;
-  }
-  .hero.is-medium {
-    min-width: 113vh;
-  }
-
   .horizontal-line {
     height: 1px;
     background-color: #e6e6e6;
@@ -473,8 +321,16 @@
       color-stop(-4.02, white)
     );
   }
+}
 
-  .footer.footer-sm {
-    min-width: 113vh;
-  }
+.hero.is-fullheight-style {
+  padding: 8rem 9.5rem !important;
+}
+
+.hero.is-fullheight-style-hobbies {
+  padding: 7rem 6.5rem !important;
+}
+
+.hero.is-medium-style {
+  padding: 1rem 11.5rem !important;
 }

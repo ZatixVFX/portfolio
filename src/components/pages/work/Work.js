@@ -4,7 +4,10 @@ import prj from "./Projects";
 
 const Work = () => {
   return (
-    <section className="hero is-fullheight" id="Work">
+    <section
+      className="hero is-fullheight is-fullheight-style-hobbies"
+      id="Work"
+    >
       <div className="hero-header has-text-centered">
         <h1 className="title header-title">Work</h1>
         <h2 className="subtitle">View my work</h2>
@@ -13,10 +16,7 @@ const Work = () => {
       <div className="hero-body work-body-spacing">
         <div className="columns is-variable is-desktop" style={gridstyle}>
           {prj.map((p, id) => (
-            <div
-              className={`column hover-effect is-mobile is-12-desktop is-8-1920px is-8-768px ${p.offset}`}
-              key={id}
-            >
+            <div className="column hover-effect is-12 " key={id}>
               <div className="card">
                 <div className="card-image">
                   <figure
@@ -33,7 +33,6 @@ const Work = () => {
                           style={{ marginTop: "0.6rem" }}
                           rel="noopener noreferrer"
                           target="_blank"
-                          data-tooltip={p.tooltip}
                         >
                           View Project
                         </a>
@@ -48,11 +47,11 @@ const Work = () => {
       </div>
       <div className="hero-body">
         <div className="container-1">
-          <i class="fas fa-hands fa-9x"></i>
-          <i class="fas fa-heart fa-9x"></i>
+          <i className="fas fa-hands fa-9x"></i>
+          <i className="fas fa-heart fa-9x"></i>
         </div>
         <div className="columns is-variable is-mobile is-desktop">
-          <div className="column is-mobile is-9-desktop is-offset-2">
+          <div className="column is-9 is-offset-3">
             <h1 className="title has-text-left">Volunteer work</h1>
             <p style={{ fontSize: "19px" }}>
               <b>Company: </b> {`SSS (Sports Stepping Stones)`}
@@ -92,7 +91,8 @@ const Work = () => {
 const gridstyle = {
   display: "grid",
   gridTemplateColumns: "repeat(2, 1fr)",
-  gridGap: "1rem",
+  rowGap: "1rem",
+  columnGap: "2.5rem",
 };
 
 export default Work;

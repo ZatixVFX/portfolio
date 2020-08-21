@@ -5,7 +5,7 @@ import FullStackLogo from "../../../resources/images/full-stack-logo.png";
 const Skills = () => {
   return (
     <section
-      className="hero is-medium"
+      className="hero is-medium is-medium-style"
       id="Skills"
       style={{ backgroundColor: "lightblue" }}
     >
