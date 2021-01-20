@@ -4,20 +4,22 @@ import Navbar from "../layout/Navbar";
 
 const LandingPage = () => {
   return (
-    <section className="hero landing-page-bg is-fullheight" id="landing-page">
-      <div className="hero-head">
-        <Navbar />
-      </div>
-      <div className="hero-body">
-        <div className="container has-text-centered">
-          <h1 className="title has-text-white">
-            {" "}
-            Hello, My name is Junaid Salie <br /> and I'am a full stack
-            developer
-          </h1>
+    <div className="container-fluid section_divider" id="landing-page">
+      <div className="row">
+        <div className="col-xxl col-sm-12 align-self-center">
+          <div className="typewriter">
+            <h1 className="text-center text_1" style={{ fontSize: "2.5rem" }}>
+              {" "}
+              Hello, My name is Junaid Salie
+            </h1>
+            <br />
+            <h2 className="text-center text_2" style={{ fontSize: "2.5rem" }}>
+              and I'am a full stack developer
+            </h2>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

@@ -1,8 +1,9 @@
 import React from "react";
-import { Link } from "react-scroll";
+//import { Link } from "react-scroll";
 
-import JunaidSalieLogo from "../../resources/images/JunaidSalieLogo.png";
+//import JunaidSalieLogo from "../../resources/images/JunaidSalieLogo.png";
 
+/*
 const NavbarBurger = (props) => (
   <a
     onClick={props.toggleMenu}
@@ -19,7 +20,80 @@ const NavbarBurger = (props) => (
     <span aria-hidden="true"></span>
   </a>
 );
+*/
 
+const Navbar = () => {
+  return (
+    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <div className="container-fluid">
+        <a className="navbar-brand">
+          <div className="wave-wrap">
+            <div className="j wave">J</div>
+            <div className="u wave">u</div>
+            <div className="n wave">n</div>
+            <div className="a wave">a</div>
+            <div className="i wave">i</div>
+            <div className="d wave">d</div>
+            <div className="blank_space wave" style={{ marginLeft: "10px" }}>
+              {" "}
+            </div>
+            <div className="s wave">S</div>
+            <div className="aa wave">a</div>
+            <div className="l wave">l</div>
+            <div className="ii wave">i</div>
+            <div className="e wave">e </div>
+          </div>
+        </a>
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="navbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbar">
+          <ul className="navbar-nav ms-auto">
+            <li className="nav-item">
+              <a href="About" className="nav-link">
+                About
+              </a>
+            </li>
+            <li className="nav-item">
+              <a href="Skills" className="nav-link">
+                Skills
+              </a>
+            </li>
+            <li className="nav-item">
+              <a href="Hobbies" className="nav-link">
+                Hobbies
+              </a>
+            </li>
+            <li className="nav-item">
+              <a href="Work" className="nav-link">
+                Work
+              </a>
+            </li>
+            <li className="nav-item">
+              <a href="Testimonials" className="nav-link">
+                Testimonials
+              </a>
+            </li>
+            <li className="nav-item">
+              <a href="Contact" className="nav-link">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  );
+};
+
+/*
 class Navbar extends React.Component {
   state = {
     navBackground: "transparent",
@@ -140,5 +214,5 @@ class Navbar extends React.Component {
     );
   }
 }
-
+*/
 export default Navbar;
